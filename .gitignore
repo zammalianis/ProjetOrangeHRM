@@ -1,0 +1,54 @@
+#Ignore build and dependency files
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#Ignore Maven-specific files
+
+.maven/
+mvnw
+mvnw.cmd
+
+# Ignore log and output files
+
+*.log
+/logs/
+*.out
+*.err
+
+# Ignore test reports and screenshots
+
+/test-output/
+screenshots/
+allur-results/
+reports/
+ExtentReport/
+*.html
+
+# Ignore generated selenium webDriver files
+chromedriver.log
+geckodriver.log
+
+# Ignore compiled and temporary file
+/bin/
+*.swp
+*.DS Store
+Thumbs.db
+
+#Ignore Node modules (if using any JS tools)
+node_modules/
+
+# Ignore dependency caching
+/.m2/

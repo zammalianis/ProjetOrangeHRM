@@ -16,6 +16,7 @@ public class ApiTest {
 	@Test()
 	
 	public void verifyGetUserAPI() {
+		// Initialization softassert
 		SoftAssert softAssert = new SoftAssert();
 		// step1: Define EndPoint
 		String endPoint = "https://jsonplaceholder.typicode.com/users/1";

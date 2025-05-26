@@ -26,9 +26,9 @@ stage('Test') {
 stage('Reports') {
   steps {
     publishHTML(target: [
-         reportDir: 'src/test/resources/ExtentReport',
+         reportDir: 'C:/Users/anisz/eclipse-workspace/ProjetOrangeHRM/src/test/resources/ExtentReport',
          reportFiles: 'ExtentReport.html',
-         reportName: 'Extent Spark Report'
+         reportName: 'html extent Report'
          ])
       }
    }

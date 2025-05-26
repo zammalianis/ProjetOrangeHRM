@@ -33,7 +33,8 @@ stage('Reports') {
       }
    }
 }
- 
+ post {
+   
 success {
    emailext (
        to: 'aniszammali5@gmail.com',

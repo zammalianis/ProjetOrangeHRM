@@ -14,7 +14,7 @@ pipeline {
 
 stage('Build') {
    steps {
-       bat 'mvn clean install'
+       bat 'mvn clean'
     }
 }
 
@@ -60,7 +60,7 @@ success {
        
        <p><b>Build log is attached.</b></p>
 
-       <p><b>Extent Report:</b> <a href="http://localhost:9090/job/OrangeHRM_Build/HTML_20Extent_20Report/">
+       <p><b>Extent Report:</b> <a href="localhost:9090/job/orangeHRM/HTML_20Extent_20Report/">
         CLICK here</a></p>
 
        <p>Best regards,</p>
@@ -95,7 +95,7 @@ Failure {
             <p><b>Branch:</b> ${env.GIT_BRANCH}</p>
             
             <p><b>Build log is attached.</b></p>
-           <p><b>Extent Report (if available):</b> <a href="http://localhost:9090/job/OrangeHRM_Build/HTML_20Extent_20Report/">
+           <p><b>Extent Report (if available):</b> <a href="localhost:9090/job/orangeHRM/HTML_20Extent_20Report/">
            CLICK here</a></p>
 
            <p>Best regards,</p>

@@ -33,11 +33,7 @@ stage('Reports') {
       }
    }
 }
- post {
-   always {
-       archiveArtifacts artifacts: '**/src/test/resources/ExtentReport/ExtentReport.html', fingerprint: true
-       junit 'target/surefire-reports/*.xml'
-    }
+ 
 success {
    emailext (
        to: 'aniszammali5@gmail.com',

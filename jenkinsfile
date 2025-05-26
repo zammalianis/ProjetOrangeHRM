@@ -20,7 +20,7 @@ stage('Build') {
 
 stage('Test') {
   steps {
-      bat 'mvn test'
+      bat 'mvn clean'
     }
 }
 stage('Reports') {

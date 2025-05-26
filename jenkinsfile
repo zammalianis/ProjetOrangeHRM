@@ -26,7 +26,7 @@ stage('Test') {
 stage('Reports') {
   steps {
     publishHTML(target: [
-         reportDir: 'C:/Users/anisz/eclipse-workspace/ProjetOrangeHRM/src/test/resources/ExtentReport',
+         reportDir: 'src/test/resources/ExtentReport',
          reportFiles: 'ExtentReport.html',
          reportName: 'html extent Report'
          ])
@@ -35,7 +35,7 @@ stage('Reports') {
 }
  post {
    always {
-       archiveArtifacts artifacts: '/src/test/resources/ExtentReport/ExtentReport.html', fingerprint: true
+       archiveArtifacts artifacts: 'src/test/resources/ExtentReport/ExtentReport.html', fingerprint: true
        junit 'target/surefire-reports/*.xml'
     }
 success {

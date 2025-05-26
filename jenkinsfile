@@ -33,11 +33,14 @@ stage('Reports') {
       }
    }
 }
+environment {
+        EMAIL_TO = 'aniszammali5@gmail.com'
+    }
  post {
    
 success {
    emailext (
-       to: 'aniszammali5@gmail.com',
+       to: "${EMAIL_TO}",
        subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
 	   body: """
 	   <html>
